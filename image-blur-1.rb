@@ -1,16 +1,16 @@
 class Image
       attr_accessor :image
 
-      def initialize(image)
+          def initialize(image)
             @image = image
-      end
+          end
 
-      def output_image
+          def output_image
             @image.each do |row|
               puts row.join
-      end
+          end
 
-  end
+      end
 end
 
 
