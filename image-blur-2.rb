@@ -45,7 +45,7 @@ image = Image.new([
 [0, 0, 0, 0],
 [0, 1, 0, 0], #[1,1]
 [0, 0, 0, 1], #[2,3]
-[0, 0, 0, 0]
+[0, 0, 1, 0]
 ])
 
 image.blur              #blurred image
@@ -55,8 +55,9 @@ image2 = Image.new([
 [0, 0, 0, 0],
 [0, 1, 0, 0],
 [0, 0, 0, 1],
-[0, 0, 0, 0]
+[0, 0, 1, 0]
 ])
 
-image2.blur
+image2.blur(2)
 image2.output_image
+puts
